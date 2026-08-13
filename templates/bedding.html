@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% block content %}
+<div class="pagehead"><div><h1>Bedding Rules</h1><p class="muted">Imported from the Mississippi and Tennessee bedding estimating workbooks. Confidence and prohibition flags are preserved.</p></div></div>
+<form class="card inline" method="get">
+  <label>State<select name="state"><option value="">All</option><option value="MS" {% if state=='MS' %}selected{% endif %}>MS</option><option value="TN" {% if state=='TN' %}selected{% endif %}>TN</option></select></label>
+  <label>Jurisdiction<select name="jurisdiction"><option value="">All</option>{% for j in jurisdictions %}<option value="{{ j.jurisdiction }}" {% if jurisdiction==j.jurisdiction %}selected{% endif %}>{{ j.jurisdiction }}</option>{% endfor %}</select></label>
+  <button>Filter</button>
+</form>
+<div class="card"><table><thead><tr><th>State</th><th>Jurisdiction</th><th>System</th><th>Pipe</th><th>Size</th><th>Bedding</th><th>Qty / 100 LF</th><th>Confidence</th></tr></thead><tbody>
+{% for r in rows %}<tr><td>{{ r.state }}</td><td>{{ r.jurisdiction }}</td><td>{{ r.system_type }}</td><td>{{ r.pipe_material }}</td><td>{{ 'All' if r.applies_all_sizes else (r.nominal_diameter_in|num ~ ' in') }}</td><td>{{ r.bedding_class }}{% if r.prohibited %}<div class="warning compact">PROHIBITED</div>{% endif %}</td><td>{{ r.bedding_volume_per_100_lf_cy|num }} CY</td><td>{{ r.data_confidence or '—' }}</td></tr>{% endfor %}
+</tbody></table></div>{% endblock %}

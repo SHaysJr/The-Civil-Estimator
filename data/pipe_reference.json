@@ -1,0 +1,6516 @@
+{
+  "materials": [
+    {
+      "material_id": 1,
+      "category": "Water Pipe",
+      "material_name": "C 900 Pipe",
+      "spec_code": "C900"
+    },
+    {
+      "material_id": 2,
+      "category": "Water Pipe",
+      "material_name": "PVCO molecularly oriented PVC C909",
+      "spec_code": "C909"
+    },
+    {
+      "material_id": 3,
+      "category": "Water Pipe",
+      "material_name": "Ductile-iron pipe (DIP)",
+      "spec_code": "DIP"
+    },
+    {
+      "material_id": 4,
+      "category": "Water Pipe",
+      "material_name": "HDPE solid-wall pressure pipe C906"
+    },
+    {
+      "material_id": 5,
+      "category": "Water Pipe",
+      "material_name": "Steel water pipe"
+    },
+    {
+      "material_id": 6,
+      "category": "Water Pipe",
+      "material_name": "Prestressed concrete cylinder pipe (PCCP)"
+    },
+    {
+      "material_id": 7,
+      "category": "Water Pipe",
+      "material_name": "Reinforced concrete cylinder pipe (RCCP)"
+    },
+    {
+      "material_id": 8,
+      "category": "Water Pipe",
+      "material_name": "Fiberglass/GRP pressure pipe"
+    },
+    {
+      "material_id": 9,
+      "category": "Water Pipe",
+      "material_name": "PVC IPS pressure pipe"
+    },
+    {
+      "material_id": 10,
+      "category": "Pressure Sewer Pipe",
+      "material_name": "Pressure Sewer",
+      "spec_code": "C900"
+    },
+    {
+      "material_id": 11,
+      "category": "Pressure Sewer Pipe",
+      "material_name": "HDPE Force Main",
+      "spec_code": "C906"
+    },
+    {
+      "material_id": 12,
+      "category": "Pressure Sewer Pipe",
+      "material_name": "DIP Force Main",
+      "spec_code": "C153"
+    },
+    {
+      "material_id": 13,
+      "category": "Pressure Sewer Pipe",
+      "material_name": "Steel Force Main",
+      "spec_code": "C219"
+    },
+    {
+      "material_id": 14,
+      "category": "Pressure Sewer Pipe",
+      "material_name": "Fiberglass / GRP Pressure Sewer",
+      "spec_code": "D3517"
+    },
+    {
+      "material_id": 15,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "PVC Solid-Wall",
+      "spec_code": "SDR35"
+    },
+    {
+      "material_id": 16,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "PVC Heavy-Wall",
+      "spec_code": "C900"
+    },
+    {
+      "material_id": 17,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "PVC Large-Diameter P28",
+      "spec_code": "C906"
+    },
+    {
+      "material_id": 18,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "PVC Large-Diameter PS 75",
+      "spec_code": "C153"
+    },
+    {
+      "material_id": 19,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "Vitrified Clay Pipe (VCP)",
+      "spec_code": "C219"
+    },
+    {
+      "material_id": 20,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "RCP",
+      "spec_code": "D3517"
+    },
+    {
+      "material_id": 21,
+      "category": "Gravity Sewer Pipe",
+      "material_name": "Fiberglass/GRP gravity sewer"
+    },
+    {
+      "material_id": 22,
+      "category": "Storm Drain",
+      "material_name": "RCP",
+      "spec_code": "RCP"
+    },
+    {
+      "material_id": 23,
+      "category": "Storm Drain",
+      "material_name": "Corrugated HDPE dual-wall",
+      "spec_code": "HDPE"
+    },
+    {
+      "material_id": 24,
+      "category": "Storm Drain",
+      "material_name": "Corrugated PE Dual/Triple-Wall",
+      "spec_code": "PE Dual/Triple-Wall"
+    },
+    {
+      "material_id": 25,
+      "category": "Storm Drain",
+      "material_name": "PVC Profile-Wall Sewer/Storm Pipe",
+      "spec_code": "PVC Profile-Wall Storm Pipe"
+    },
+    {
+      "material_id": 26,
+      "category": "Storm Drain",
+      "material_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "spec_code": "PVC Solid-Wall Sewer/Storm Pipe"
+    },
+    {
+      "material_id": 27,
+      "category": "Storm Drain",
+      "material_name": "Corrugated Metal Pipe",
+      "spec_code": "Corrugated Metal Pipe"
+    },
+    {
+      "material_id": 28,
+      "category": "Storm Drain",
+      "material_name": "Corrugated Aluminum Pipe",
+      "spec_code": "Corrugated Aluminum Pipe"
+    },
+    {
+      "material_id": 29,
+      "category": "Storm Drain",
+      "material_name": "Single-Wall Corrugated HDPE",
+      "spec_code": "Single-Wall Corrugated HDPE"
+    },
+    {
+      "material_id": 30,
+      "category": "Storm Drain",
+      "material_name": "Perforated PVC",
+      "spec_code": "Perforated PVC"
+    }
+  ],
+  "sizes": [
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 1,
+      "pipe_name": "C900",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 2,
+      "pipe_name": "C909",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 3,
+      "pipe_name": "DIP",
+      "pipe_size": "64",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 5,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 6,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 7,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 8,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 9,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 10,
+      "pipe_name": "C900",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 11,
+      "pipe_name": "C906",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C151",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C111",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C110",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 12,
+      "pipe_name": "C153",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C200",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C206",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C207",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 13,
+      "pipe_name": "C219",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "C950",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 14,
+      "pipe_name": "D3517",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 15,
+      "pipe_name": "SDR35",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "15",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "21",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "27",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "65",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 16,
+      "pipe_name": "C900",
+      "pipe_size": "65",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 17,
+      "pipe_name": "C906",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C151",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C111",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C110",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "3",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 18,
+      "pipe_name": "C153",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C200",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C206",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C207",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 19,
+      "pipe_name": "C219",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "C950",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 20,
+      "pipe_name": "D3517",
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "4",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "6",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "8",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "10",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "12",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "14",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "16",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "18",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "20",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "24",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "30",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "36",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "42",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "48",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "54",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "60",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 21,
+      "pipe_name": null,
+      "pipe_size": "64",
+      "length_ft": "14"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "12",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "15",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "18",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "21",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "24",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "27",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "30",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "33",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "36",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "42",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "48",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "54",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "60",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "66",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "72",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "78",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "84",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "90",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "96",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "102",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "108",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "120",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "132",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 22,
+      "pipe_name": "RCP",
+      "pipe_size": "144",
+      "length_ft": "8"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 23,
+      "pipe_name": "HDPE",
+      "pipe_size": "72",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 24,
+      "pipe_name": "PE Dual/Triple-Wall",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 25,
+      "pipe_name": "PVC Profile-Wall Storm Pipe",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 26,
+      "pipe_name": "PVC Solid-Wall Sewer/Storm Pipe",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "21",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "27",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "33",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "66",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "72",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "78",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "84",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "90",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "96",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "102",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "108",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "114",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "120",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "126",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "132",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "138",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 27,
+      "pipe_name": "Corrugated Metal Pipe",
+      "pipe_size": "144",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "21",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "27",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "30",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "33",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "36",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "42",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "48",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "54",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "60",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "66",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "72",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "78",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "84",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "90",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "96",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "102",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "108",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "114",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "120",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "126",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "132",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "138",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 28,
+      "pipe_name": "Corrugated Aluminum Pipe",
+      "pipe_size": "144",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "3",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "12",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "15",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "18",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "21",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 29,
+      "pipe_name": "Single-Wall Corrugated HDPE",
+      "pipe_size": "24",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "3",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "4",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "6",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "8",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "10",
+      "length_ft": "20"
+    },
+    {
+      "material_id": 30,
+      "pipe_name": "Perforated PVC",
+      "pipe_size": "12",
+      "length_ft": "20"
+    }
+  ],
+  "joints_connections": [
+    {
+      "material_id": 1,
+      "joint_type": "Gasketed Bell & Spigot"
+    },
+    {
+      "material_id": 1,
+      "joint_type": "Restrained Push-on or Spline"
+    },
+    {
+      "material_id": 1,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 2,
+      "joint_type": "Gasketed Bell & Spigot"
+    },
+    {
+      "material_id": 2,
+      "joint_type": "Proprietary Restrained Joint"
+    },
+    {
+      "material_id": 2,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "Push-on"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "mechanical joint"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "restrained push-on;"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "flanged;"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "grooved"
+    },
+    {
+      "material_id": 3,
+      "joint_type": "ball-and-socket"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "Butt fusion"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "electrofusion;"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "socket fusion on small sizes"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "flange adapter"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 4,
+      "joint_type": "estrained mechanical coupling"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "Butt weld"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "welded bell & spigot"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "lap weld"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "flange"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "grooved coupling"
+    },
+    {
+      "material_id": 5,
+      "joint_type": "bolted sleeve coupling"
+    },
+    {
+      "material_id": 6,
+      "joint_type": "Gasketed bell & spigot"
+    },
+    {
+      "material_id": 6,
+      "joint_type": "welded or harnessed restrained joint"
+    },
+    {
+      "material_id": 6,
+      "joint_type": "flange adapter"
+    },
+    {
+      "material_id": 7,
+      "joint_type": "Gasketed bell & spigot"
+    },
+    {
+      "material_id": 7,
+      "joint_type": "welded or harnessed restrained joint"
+    },
+    {
+      "material_id": 7,
+      "joint_type": "flange adapter"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "Gasketed bell \u00d7 spigot"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "double-bell coupling;"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "flange"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "laminated butt-wrap"
+    },
+    {
+      "material_id": 8,
+      "joint_type": "mechanical transition coupling"
+    },
+    {
+      "material_id": 9,
+      "joint_type": "Solvent-weld socket; threaded on small sizes"
+    },
+    {
+      "material_id": 9,
+      "joint_type": "gasketed bell on selected products"
+    },
+    {
+      "material_id": 9,
+      "joint_type": "MJ w/ Mega lug"
+    },
+    {
+      "material_id": 10,
+      "joint_type": "Gasketed bell + spigot"
+    },
+    {
+      "material_id": 10,
+      "joint_type": "Restrained joint"
+    },
+    {
+      "material_id": 10,
+      "joint_type": "MJ/flange adapter"
+    },
+    {
+      "material_id": 11,
+      "joint_type": "Butt Fusion"
+    },
+    {
+      "material_id": 11,
+      "joint_type": "Electrofusion"
+    },
+    {
+      "material_id": 11,
+      "joint_type": "Flange Adapter"
+    },
+    {
+      "material_id": 11,
+      "joint_type": "MJ Adapter"
+    },
+    {
+      "material_id": 11,
+      "joint_type": "Transition Coupling"
+    },
+    {
+      "material_id": 12,
+      "joint_type": "Push-On"
+    },
+    {
+      "material_id": 12,
+      "joint_type": "MJ"
+    },
+    {
+      "material_id": 12,
+      "joint_type": "Restrained Joint"
+    },
+    {
+      "material_id": 12,
+      "joint_type": "Flange"
+    },
+    {
+      "material_id": 13,
+      "joint_type": "Welded"
+    },
+    {
+      "material_id": 13,
+      "joint_type": "Flanged"
+    },
+    {
+      "material_id": 13,
+      "joint_type": "Grooved"
+    },
+    {
+      "material_id": 13,
+      "joint_type": "Sleeve Coupling"
+    },
+    {
+      "material_id": 14,
+      "joint_type": "Gasketed Coupling"
+    },
+    {
+      "material_id": 14,
+      "joint_type": "Flange"
+    },
+    {
+      "material_id": 14,
+      "joint_type": "Laminated Joint"
+    },
+    {
+      "material_id": 14,
+      "joint_type": "Mechanical Transition"
+    },
+    {
+      "material_id": 15,
+      "joint_type": "Integral Gasketed Bell + Spigot"
+    },
+    {
+      "material_id": 15,
+      "joint_type": "Heavy-Wall Coupling"
+    },
+    {
+      "material_id": 15,
+      "joint_type": "OD Transition Coupling"
+    },
+    {
+      "material_id": 16,
+      "joint_type": "Gasketed Bell + Spigot"
+    },
+    {
+      "material_id": 16,
+      "joint_type": "Fabricated Gasketed Coupling"
+    },
+    {
+      "material_id": 16,
+      "joint_type": "Custom Flexible Coupling"
+    },
+    {
+      "material_id": 17,
+      "joint_type": "Gasketed Bell + Spigot"
+    },
+    {
+      "material_id": 17,
+      "joint_type": "Fabricated Coupling"
+    },
+    {
+      "material_id": 18,
+      "joint_type": "Factory Compression Gasket Bell \u00c3\u2014 Spigot"
+    },
+    {
+      "material_id": 18,
+      "joint_type": "Flexible Transition Coupling"
+    },
+    {
+      "material_id": 19,
+      "joint_type": "Tongue-And-Groove With Mortar/Mastic"
+    },
+    {
+      "material_id": 19,
+      "joint_type": "Gasketed Bell + Spigot"
+    },
+    {
+      "material_id": 19,
+      "joint_type": "Confined O-Ring"
+    },
+    {
+      "material_id": 19,
+      "joint_type": "External Joint Wrap"
+    },
+    {
+      "material_id": 20,
+      "joint_type": "Gasketed Coupling/Bell + Spigot"
+    },
+    {
+      "material_id": 20,
+      "joint_type": "Laminated Joint"
+    },
+    {
+      "material_id": 20,
+      "joint_type": "Flange"
+    },
+    {
+      "material_id": 20,
+      "joint_type": "Flexible Transition"
+    },
+    {
+      "material_id": 22,
+      "joint_type": "Storm sewer"
+    },
+    {
+      "material_id": 22,
+      "joint_type": "culverts"
+    },
+    {
+      "material_id": 22,
+      "joint_type": "detention systems"
+    },
+    {
+      "material_id": 23,
+      "joint_type": "Integral Bell \u00d7 Spigot With Gasket"
+    },
+    {
+      "material_id": 23,
+      "joint_type": "Split Coupler"
+    },
+    {
+      "material_id": 23,
+      "joint_type": "Snap Coupler"
+    },
+    {
+      "material_id": 23,
+      "joint_type": "Wraparound Repair Coupling"
+    },
+    {
+      "material_id": 24,
+      "joint_type": "Gasketed bell \u00d7 spigot"
+    },
+    {
+      "material_id": 24,
+      "joint_type": "Split/Wrap Coupling"
+    },
+    {
+      "material_id": 24,
+      "joint_type": "repair coupling"
+    },
+    {
+      "material_id": 25,
+      "joint_type": "Gasketed bell \u00d7 spigot"
+    },
+    {
+      "material_id": 25,
+      "joint_type": "Gasketed Coupling"
+    },
+    {
+      "material_id": 25,
+      "joint_type": "flexible transition"
+    },
+    {
+      "material_id": 26,
+      "joint_type": "Gasketed bell \u00d7 spigot"
+    },
+    {
+      "material_id": 26,
+      "joint_type": "Gasketed Coupling"
+    },
+    {
+      "material_id": 26,
+      "joint_type": "flexible transition"
+    },
+    {
+      "material_id": 27,
+      "joint_type": "Annular/Helical Band Coupling"
+    },
+    {
+      "material_id": 27,
+      "joint_type": "Hugger Band"
+    },
+    {
+      "material_id": 27,
+      "joint_type": "Gasketed/Watertight Band"
+    },
+    {
+      "material_id": 27,
+      "joint_type": "Bolted Flange On Specialty Systems"
+    },
+    {
+      "material_id": 28,
+      "joint_type": "Coupling band"
+    },
+    {
+      "material_id": 28,
+      "joint_type": "gasketed band"
+    },
+    {
+      "material_id": 28,
+      "joint_type": "bolted specialty joint"
+    },
+    {
+      "material_id": 29,
+      "joint_type": "Snap/Split Coupler"
+    },
+    {
+      "material_id": 29,
+      "joint_type": "Internal Coupler"
+    },
+    {
+      "material_id": 29,
+      "joint_type": "Wrap Coupling"
+    },
+    {
+      "material_id": 30,
+      "joint_type": "Solvent-Weld"
+    },
+    {
+      "material_id": 30,
+      "joint_type": "Gasketed Bell"
+    },
+    {
+      "material_id": 30,
+      "joint_type": "Snap Coupling On Drain Products"
+    }
+  ],
+  "fittings": [
+    {
+      "material_id": 1,
+      "fitting": "11.25\u00b0"
+    },
+    {
+      "material_id": 1,
+      "fitting": "22.5\u00b0"
+    },
+    {
+      "material_id": 1,
+      "fitting": "45\u00b0"
+    },
+    {
+      "material_id": 1,
+      "fitting": "90\u00b0"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Copupling"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Tapping Sleeve"
+    },
+    {
+      "material_id": 1,
+      "fitting": "MJ Adapter"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Flange Adapter"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Hydrant/valve Adapters"
+    },
+    {
+      "material_id": 1,
+      "fitting": "Restrained Fittings"
+    },
+    {
+      "material_id": 2,
+      "fitting": "11.25\u00b0"
+    },
+    {
+      "material_id": 2,
+      "fitting": "22.5\u00b0"
+    },
+    {
+      "material_id": 2,
+      "fitting": "45\u00b0"
+    },
+    {
+      "material_id": 2,
+      "fitting": "90\u00b0"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Copupling"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Tapping Sleeve"
+    },
+    {
+      "material_id": 2,
+      "fitting": "MJ Adapter"
+    },
+    {
+      "material_id": 2,
+      "fitting": "Flange Adapter"
+    },
+    {
+      "material_id": 2,
+      "fitting": "hydrant/valve adapters"
+    },
+    {
+      "material_id": 2,
+      "fitting": "restrained fittings"
+    },
+    {
+      "material_id": 3,
+      "fitting": "11.25\u00b0"
+    },
+    {
+      "material_id": 3,
+      "fitting": "22.5\u00b0"
+    },
+    {
+      "material_id": 3,
+      "fitting": "45\u00b0"
+    },
+    {
+      "material_id": 3,
+      "fitting": "90\u00b0"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Copupling"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Tapping Sleeve"
+    },
+    {
+      "material_id": 3,
+      "fitting": "MJ Adapter"
+    },
+    {
+      "material_id": 3,
+      "fitting": "Flange Adapter"
+    },
+    {
+      "material_id": 3,
+      "fitting": "hydrant/valve adapters"
+    },
+    {
+      "material_id": 3,
+      "fitting": "restrained fittings"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Fabricated 11.25\u00b0"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Fabricated 22.5\u00b0"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Fabricated 45\u00b0"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Fabricated 90\u00b0"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Tee"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Cross"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Reducer"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Copupling"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Tapping Sleeve"
+    },
+    {
+      "material_id": 4,
+      "fitting": "MJ Adapter"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Flange Adapter"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Hydrant Valve Adapters"
+    },
+    {
+      "material_id": 4,
+      "fitting": "Restrained Fittings"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Fabricated 11.25\u00b0"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Fabricated 22.5\u00b0"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Fabricated 45\u00b0"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Fabricated 90\u00b0"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Tee"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Wye"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Outlet"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Flanges"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Manifold"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Expansion Joints"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Coupling"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Dismantling Joint"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 5,
+      "fitting": "Bulkhead"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Fabricated 11.25\u00b0"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Fabricated 22.5\u00b0"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Fabricated 45\u00b0"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Fabricated 90\u00b0"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Copupling"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Closures"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Bulkhead"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Flanged Adapter"
+    },
+    {
+      "material_id": 6,
+      "fitting": "Restrained Harness Assemblies"
+    },
+    {
+      "material_id": 7,
+      "fitting": "11.25\u00b0"
+    },
+    {
+      "material_id": 7,
+      "fitting": "22.5\u00b0"
+    },
+    {
+      "material_id": 7,
+      "fitting": "45\u00b0"
+    },
+    {
+      "material_id": 7,
+      "fitting": "90\u00b0"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Cupling"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Harnessed Joints"
+    },
+    {
+      "material_id": 7,
+      "fitting": "MJ Adapter"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Bulkheads"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Outlets"
+    },
+    {
+      "material_id": 7,
+      "fitting": "Closures"
+    },
+    {
+      "material_id": 8,
+      "fitting": "11.25\u00b0"
+    },
+    {
+      "material_id": 8,
+      "fitting": "22.5\u00b0"
+    },
+    {
+      "material_id": 8,
+      "fitting": "45\u00b0"
+    },
+    {
+      "material_id": 8,
+      "fitting": "90\u00b0"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Tee"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Wye"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Reducer"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Flanges"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Blind Flanges"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Manhole Structure Adapters"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Closure Spools"
+    },
+    {
+      "material_id": 8,
+      "fitting": "Custom Fabricated Specials"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Socket 11.25\u00b0"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Socket  22.5\u00b0"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Socket  45\u00b0"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Socket  90\u00b0"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Tee"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Cross"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Reducer"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Unions"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Coupling"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Adapter"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Plug"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Flange"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Repair Coupling"
+    },
+    {
+      "material_id": 9,
+      "fitting": "Transition Fitting"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Pressure bend"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Tee"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Wye"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Reducer"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Coupling"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Cap"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Ccleanout"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Combination Air-Release Assemblies"
+    },
+    {
+      "material_id": 10,
+      "fitting": "MJ/ Flange Adapters"
+    },
+    {
+      "material_id": 10,
+      "fitting": "Restrained Fittings"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Fused Elbows"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Caps"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Flange/MJ Adapters"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Electrofusion Couplings And Saddles"
+    },
+    {
+      "material_id": 11,
+      "fitting": "Cleanout And Air-Valve Branches"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Crosses"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Sleeves"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Plugs/Caps"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Restrained Glands"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Flange Spools"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Air-Valve Tees"
+    },
+    {
+      "material_id": 12,
+      "fitting": "Cleanout Fittings"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Fabricated Bends"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Branches"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Flanges"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Dismantling Joints"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Expansion Joints"
+    },
+    {
+      "material_id": 13,
+      "fitting": "Closures"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Elbows"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Flanges"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Closure Pieces"
+    },
+    {
+      "material_id": 14,
+      "fitting": "Custom Specials"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Heavy-Wall Bends"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Tee-Wyes"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Couplings"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Caps"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Cleanouts"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Manhole Adapters"
+    },
+    {
+      "material_id": 15,
+      "fitting": "Fabricated Large-Diameter Specials"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Fabricated Bends"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Couplings"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 16,
+      "fitting": "Manhole Adapters"
+    },
+    {
+      "material_id": 16,
+      "fitting": "End Closures"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Fabricated Bends"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Couplings"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Manhole Adapters"
+    },
+    {
+      "material_id": 17,
+      "fitting": "Closures"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Increasers"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Stoppers"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Manhole Connectors"
+    },
+    {
+      "material_id": 18,
+      "fitting": "Flexible Transition Couplings"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Precast Bends"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Manhole Tees"
+    },
+    {
+      "material_id": 19,
+      "fitting": "End Sections"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Plugs"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Custom Junctions"
+    },
+    {
+      "material_id": 19,
+      "fitting": "Structure Connectors"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Manhole Tees"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Closures"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Flange Adapters"
+    },
+    {
+      "material_id": 20,
+      "fitting": "Custom Specials"
+    },
+    {
+      "material_id": 22,
+      "fitting": "Flared end sections"
+    },
+    {
+      "material_id": 22,
+      "fitting": "beveled ends"
+    },
+    {
+      "material_id": 22,
+      "fitting": "bends"
+    },
+    {
+      "material_id": 22,
+      "fitting": "tees"
+    },
+    {
+      "material_id": 22,
+      "fitting": "wyes"
+    },
+    {
+      "material_id": 22,
+      "fitting": "reducers"
+    },
+    {
+      "material_id": 22,
+      "fitting": "junctions"
+    },
+    {
+      "material_id": 22,
+      "fitting": "manhole tees"
+    },
+    {
+      "material_id": 22,
+      "fitting": "headwalls"
+    },
+    {
+      "material_id": 22,
+      "fitting": "plugs"
+    },
+    {
+      "material_id": 22,
+      "fitting": "collars"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 23,
+      "fitting": "End Caps"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Flared End Sections"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Adapters"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Manifolds"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Risers"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Catch-Basin/Manhole Adapters"
+    },
+    {
+      "material_id": 23,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 24,
+      "fitting": "End Caps"
+    },
+    {
+      "material_id": 24,
+      "fitting": "End Sections"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Adapters"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Manifolds"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Risers"
+    },
+    {
+      "material_id": 24,
+      "fitting": "Structure Connectors"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Increasers"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Stoppers"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Manhole Connectors"
+    },
+    {
+      "material_id": 25,
+      "fitting": "Flexible Transition Couplings"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Bends"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Coupling"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Caps"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Cleanouts"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Saddles"
+    },
+    {
+      "material_id": 26,
+      "fitting": "End Sections"
+    },
+    {
+      "material_id": 26,
+      "fitting": "Structure Adapters"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Elbows"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 27,
+      "fitting": "End Sections"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Risers"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Manifolds"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Headwalls"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Cut-Off Walls"
+    },
+    {
+      "material_id": 27,
+      "fitting": "Custom Fabricated Junctions"
+    },
+    {
+      "material_id": 28,
+      "fitting": "End Sections"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Elbows"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Reducers"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Risers"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Manifolds"
+    },
+    {
+      "material_id": 28,
+      "fitting": "Custom Specials"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Elbows"
+    },
+    {
+      "material_id": 29,
+      "fitting": "End Caps"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Adapters"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Outlets"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Grates"
+    },
+    {
+      "material_id": 29,
+      "fitting": "Cleanouts"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Elbows"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Tees"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Wyes"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Couplings"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Caps"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Cleanouts"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Adapters"
+    },
+    {
+      "material_id": 30,
+      "fitting": "Outlet Fittings"
+    }
+  ],
+  "applications": [
+    {
+      "material_id": 1,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 1,
+      "application": "fire water"
+    },
+    {
+      "material_id": 1,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 2,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 2,
+      "application": "fire water"
+    },
+    {
+      "material_id": 2,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 3,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 3,
+      "application": "fire water"
+    },
+    {
+      "material_id": 3,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 4,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 4,
+      "application": "fire water"
+    },
+    {
+      "material_id": 4,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 5,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 5,
+      "application": "fire water"
+    },
+    {
+      "material_id": 5,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 6,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 6,
+      "application": "fire water"
+    },
+    {
+      "material_id": 6,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 7,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 7,
+      "application": "fire water"
+    },
+    {
+      "material_id": 7,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 8,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 8,
+      "application": "fire water"
+    },
+    {
+      "material_id": 8,
+      "application": "reclaimed water"
+    },
+    {
+      "material_id": 9,
+      "application": "Distribution and transmission mains"
+    },
+    {
+      "material_id": 9,
+      "application": "fire water"
+    },
+    {
+      "material_id": 9,
+      "application": "reclaimed water"
+    }
+  ],
+  "notes": [],
+  "rcp_sizes_weights": [
+    {
+      "nominal_id_in": "12\"",
+      "wall_thickness_in": "2.00\"",
+      "outside_diameter_in": "16.00\"",
+      "weight_lbs_per_ft": 92
+    },
+    {
+      "nominal_id_in": "15\"",
+      "wall_thickness_in": "2.25\"",
+      "outside_diameter_in": "19.50\"",
+      "weight_lbs_per_ft": 127
+    },
+    {
+      "nominal_id_in": "18\"",
+      "wall_thickness_in": "2.50\"",
+      "outside_diameter_in": "23.00\"",
+      "weight_lbs_per_ft": 168
+    },
+    {
+      "nominal_id_in": "21\"",
+      "wall_thickness_in": "2.75\"",
+      "outside_diameter_in": "26.50\"",
+      "weight_lbs_per_ft": 214
+    },
+    {
+      "nominal_id_in": "24\"",
+      "wall_thickness_in": "3.00\"",
+      "outside_diameter_in": "30.00\"",
+      "weight_lbs_per_ft": 265
+    },
+    {
+      "nominal_id_in": "27\"",
+      "wall_thickness_in": "3.25\"",
+      "outside_diameter_in": "33.50\"",
+      "weight_lbs_per_ft": 322
+    },
+    {
+      "nominal_id_in": "30\"",
+      "wall_thickness_in": "3.50\"",
+      "outside_diameter_in": "37.00\"",
+      "weight_lbs_per_ft": 384
+    },
+    {
+      "nominal_id_in": "33\"",
+      "wall_thickness_in": "3.75\"",
+      "outside_diameter_in": "40.50\"",
+      "weight_lbs_per_ft": 451
+    },
+    {
+      "nominal_id_in": "36\"",
+      "wall_thickness_in": "4.00\"",
+      "outside_diameter_in": "44.00\"",
+      "weight_lbs_per_ft": 524
+    },
+    {
+      "nominal_id_in": "42\"",
+      "wall_thickness_in": "4.50\"",
+      "outside_diameter_in": "51.00\"",
+      "weight_lbs_per_ft": 686
+    },
+    {
+      "nominal_id_in": "48\"",
+      "wall_thickness_in": "5.00\"",
+      "outside_diameter_in": "58.00\"",
+      "weight_lbs_per_ft": 867
+    },
+    {
+      "nominal_id_in": "54\"",
+      "wall_thickness_in": "5.50\"",
+      "outside_diameter_in": "65.00\"",
+      "weight_lbs_per_ft": 1067
+    },
+    {
+      "nominal_id_in": "60\"",
+      "wall_thickness_in": "6.00\"",
+      "outside_diameter_in": "72.00\"",
+      "weight_lbs_per_ft": 1286
+    },
+    {
+      "nominal_id_in": "66\"",
+      "wall_thickness_in": "6.50\"",
+      "outside_diameter_in": "79.00\"",
+      "weight_lbs_per_ft": 1524
+    },
+    {
+      "nominal_id_in": "72\"",
+      "wall_thickness_in": "7.00\"",
+      "outside_diameter_in": "86.00\"",
+      "weight_lbs_per_ft": 1781
+    },
+    {
+      "nominal_id_in": "78\"",
+      "wall_thickness_in": "7.50\"",
+      "outside_diameter_in": "93.00\"",
+      "weight_lbs_per_ft": 2057
+    },
+    {
+      "nominal_id_in": "84\"",
+      "wall_thickness_in": "8.00\"",
+      "outside_diameter_in": "100.00\"",
+      "weight_lbs_per_ft": 2352
+    },
+    {
+      "nominal_id_in": "90\"",
+      "wall_thickness_in": "8.50\"",
+      "outside_diameter_in": "107.00\"",
+      "weight_lbs_per_ft": 2666
+    },
+    {
+      "nominal_id_in": "96\"",
+      "wall_thickness_in": "9.00\"",
+      "outside_diameter_in": "114.00\"",
+      "weight_lbs_per_ft": 3000
+    },
+    {
+      "nominal_id_in": "102\"",
+      "wall_thickness_in": "9.50\"",
+      "outside_diameter_in": "121.00\"",
+      "weight_lbs_per_ft": 3352
+    },
+    {
+      "nominal_id_in": "108\"",
+      "wall_thickness_in": "10.00\"",
+      "outside_diameter_in": "128.00\"",
+      "weight_lbs_per_ft": 3724
+    },
+    {
+      "nominal_id_in": "114\"",
+      "wall_thickness_in": "10.50\"",
+      "outside_diameter_in": "135.00\"",
+      "weight_lbs_per_ft": 4114
+    },
+    {
+      "nominal_id_in": "120\"",
+      "wall_thickness_in": "11.00\"",
+      "outside_diameter_in": "142.00\"",
+      "weight_lbs_per_ft": 4524
+    },
+    {
+      "nominal_id_in": "132\"",
+      "wall_thickness_in": "12.00\"",
+      "outside_diameter_in": "156.00\"",
+      "weight_lbs_per_ft": 5404
+    },
+    {
+      "nominal_id_in": "144\"",
+      "wall_thickness_in": "13.00\"",
+      "outside_diameter_in": "170.00\"",
+      "weight_lbs_per_ft": 6365
+    }
+  ],
+  "typical_laying_lengths": [
+    {
+      "material": "HDPE Pipe",
+      "common_laying_lengths": "20 ft, 40 ft, or 500'+ Coils",
+      "notes": "Straight joints come in 20' or 40' lengths. Small diameters (up to 4\" or 6\") can be shipped on continuous coils up to 500\u20131,000 feet."
+    },
+    {
+      "material": "PVC (Sch 40 & Sch 80)",
+      "common_laying_lengths": "20 feet",
+      "notes": "This is the universal retail and wholesale standard. 10-foot lengths are often sold at home improvement stores for easier transport."
+    },
+    {
+      "material": "PVC (AWWA C900)",
+      "common_laying_lengths": "20 feet",
+      "notes": "Standard utility lengths feature an integrated bell-and-spigot gasketed joint."
+    },
+    {
+      "material": "Reinforced Concrete (RCP)",
+      "common_laying_lengths": "8 feet",
+      "notes": "Due to extreme weight, standard sections are 8 feet long. 7.5-foot or 12-foot joints are occasionally available from regional casting plants."
+    },
+    {
+      "material": "Ductile Iron Pipe (DIP)",
+      "common_laying_lengths": "18 ft or 20 ft",
+      "notes": "Most modern utility water mains are supplied in standard 20-foot nominal laying lengths."
+    },
+    {
+      "material": "Steel Pipe",
+      "common_laying_lengths": "20 ft (SRL) or 40 ft (DRL)",
+      "notes": "Sold as Single Random Lengths (SRL, roughly 18-22 ft) or Double Random Lengths (DRL, roughly 38-42 ft) for cross-country pipelines."
+    }
+  ]
+}
