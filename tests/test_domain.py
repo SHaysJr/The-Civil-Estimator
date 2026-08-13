@@ -70,3 +70,14 @@ def test_bedding_geometry_matches_ms_workbook_example():
 def test_depth_pricing_legacy_increment():
     assert depth_adjusted_unit_cost(10, '0-6') == 10.0
     assert depth_adjusted_unit_cost(10, '10-12') == 11.5
+
+from domain.assemblies import companion_quantity
+
+
+def test_companion_quantity_fractional_primary_units_rounds_each_up():
+    assert companion_quantity(120, 6, 'EA') == Decimal('20')
+    assert companion_quantity(121, 6, 'EA') == Decimal('21')
+
+
+def test_companion_quantity_one_to_one_fitting_hardware():
+    assert companion_quantity(3, 1, 'EA') == Decimal('3')

@@ -1,0 +1,5 @@
+{% extends 'base.html' %}{% block content %}
+<div class="pagehead"><div><h1>Automatic Companion Rules</h1><p>When a primary catalog item is added, these related materials are added automatically. Ratio means primary units per one companion unit.</p></div><a class="button secondary" href="{{ url_for('rates') }}">Rate Catalog</a></div>
+<div class="card"><table><thead><tr><th>Scope</th><th>Primary item</th><th>Rule</th><th>Automatic companion</th></tr></thead><tbody>{% for r in rows %}<tr><td>{{ r.scope }}</td><td>{{ r.material_name }}</td><td>1 {{ r.companion_unit }} per {{ r.ratio|num }} {{ r.material_unit }}</td><td><strong>{{ r.companion_name }}</strong></td></tr>{% else %}<tr><td colspan="4" class="empty">No companion rules loaded.</td></tr>{% endfor %}</tbody></table></div>
+<div class="card note-card"><h2>How this behaves</h2><p>Companion rows are material-only. They do not add extra crew days or equipment days. Items measured as EA are rounded up to the next whole unit. Removing the primary line item also removes its automatically generated companion rows.</p></div>
+{% endblock %}

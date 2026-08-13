@@ -3,14 +3,14 @@ from flask import Flask, flash, redirect, render_template, request, url_for
 
 from db import init_db, connect
 from services import (
-    add_crew, add_equipment, add_line_from_catalog, add_section, bedding_jurisdictions, bedding_rules_for, catalog_materials,
+    add_crew, add_equipment, add_line_from_catalog, add_section, bedding_jurisdictions, bedding_rules_for, catalog_materials, catalog_materials_with_companions, companion_rules,
     compute_project, compute_section_from_db, create_project, delete_record,
     equipment_catalog, get_project, get_section, labor_catalog, list_projects,
     project_sections, update_project,
 )
 
 app=Flask(__name__)
-app.config['SECRET_KEY']='local-estimator-v3-development-key'
+app.config['SECRET_KEY']='local-estimator-v4-development-key'
 
 
 def f(name, default=0):
@@ -94,7 +94,7 @@ def section(section_id):
                                 jurisdiction=data['project']['bedding_jurisdiction'] or None,
                                 system_type=system_type)
     return render_template('section.html',data=data,labor_rates=labor_catalog(),equipment_rates=equipment_catalog(),
-                           materials=catalog_materials(scope),bedding_rules=rules,depth_bands=__import__('domain').DEPTH_BANDS)
+                           materials=catalog_materials_with_companions(scope),bedding_rules=rules,depth_bands=__import__('domain').DEPTH_BANDS)
 
 @app.post('/sections/<int:section_id>/crew')
 def section_add_crew(section_id):
@@ -111,10 +111,12 @@ def section_add_equipment(section_id):
 @app.post('/sections/<int:section_id>/lines')
 def section_add_line(section_id):
     try:
-        add_line_from_catalog(section_id,int(request.form['material_rate_id']),f('quantity'),
+        result=add_line_from_catalog(section_id,int(request.form['material_rate_id']),f('quantity'),
                               request.form.get('unit_cost_override',''),request.form.get('production_rate_override',''),
                               request.form.get('depth_band',''),request.form.get('bedding_rule_id',''),
                               request.form.get('bedding_unit_cost_per_cy',''))
+        if result.get('companions_added'):
+            flash(f"Item added with {result['companions_added']} automatic companion item(s).",'success')
     except Exception as e: flash(str(e),'error')
     return redirect(url_for('section',section_id=section_id))
 
@@ -142,12 +144,17 @@ def bedding_catalog():
         rows=conn.execute(sql,args).fetchall()
     return render_template('bedding.html',rows=rows,jurisdictions=bedding_jurisdictions(state or None),state=state,jurisdiction=jurisdiction)
 
+
+@app.route('/companions')
+def companions_catalog():
+    return render_template('companions.html', rows=companion_rules())
+
 @app.route('/rates')
 def rates():
     with connect() as conn:
-        counts={t:conn.execute(f'SELECT COUNT(*) FROM {t}').fetchone()[0] for t in ['labor_rates','equipment_rates','material_rates','bedding_rules','pipe_materials','pipe_sizes','pipe_fittings','city_counties']}
+        counts={t:conn.execute(f'SELECT COUNT(*) FROM {t}').fetchone()[0] for t in ['labor_rates','equipment_rates','material_rates','material_companions','bedding_rules','pipe_materials','pipe_sizes','pipe_fittings','city_counties']}
         scopes=[r[0] for r in conn.execute('SELECT DISTINCT scope FROM material_rates ORDER BY scope')]
     return render_template('rates.html',counts=counts,scopes=scopes,labor=labor_catalog(),equipment=equipment_catalog(),materials=catalog_materials())
 
 if __name__=='__main__':
-    init_db(); app.run(host='127.0.0.1',port=5051,debug=True)
+    init_db(); app.run(host='127.0.0.1',port=5052,debug=True)

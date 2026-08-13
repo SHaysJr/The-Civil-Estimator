@@ -1,60 +1,65 @@
-# New Estimator V3.1
+# New Estimator V4
 
-**Launch address:** http://127.0.0.1:5051
+**Launch address:** http://127.0.0.1:5052
 
-V3.1 uses port 5051 so it can run alongside older local estimator versions that use port 5000. A visible `New Estimator V3.1` badge appears in the lower-right corner of every page.
+V4 is a separate development build. It uses port 5052 so it can run alongside the older estimator and V3.1 without a port collision. Every page shows a visible **New Estimator V4** badge.
 
-# New Estimator V3
+## What V4 adds
 
-A separate local web estimator for construction estimating. V3 keeps the V2 bid/section/rate-catalog foundation and adds pipe depth and regulatory bedding calculations using the supplied Mississippi and Tennessee bedding estimating workbooks.
+V4 keeps the project/section/rate-catalog, production, equipment-tiering, tax, depth-band, and bedding logic from V3.1 and adds **automatic companion materials**.
 
-## Included in V3
+When a catalog item has a companion rule, adding that primary item automatically creates the related material-only line item(s). Examples already in the seeded catalog include:
 
-- Projects with scope sections (Dirt, Sewer, Water, Storm Drain, Demo, Erosion, Under Cut, etc.)
+- 14Ga Wire Back Silt Fence -> T-Posts
+- TEMP Plastic Fence -> T-Posts
+- C900 MJ 90 bends -> matching gasket + Mega Lug
+- C900 MJ tees -> matching gasket + Mega Lug
+
+The stored ratio is interpreted as **primary units per one companion unit**. Example: a ratio of 6 means one T-post for every 6 LF of fence. Companion items measured as `EA` are rounded up to whole units.
+
+Automatic companions:
+
+- snapshot the companion material's current catalog cost when generated;
+- do **not** add separate production days, labor days, or equipment days;
+- appear as indented `AUTO` rows beneath the estimate;
+- are deleted automatically when the primary estimate line is removed.
+
+A **Companion Rules** page lets you review every currently configured automatic relationship.
+
+## Existing estimating features
+
+- Projects and scope sections: Erosion, Demo, Dirt, Under Cut, Sewer, Water, Storm Drain, Other
 - Reusable labor, equipment, and material catalogs
-- Production-rate-driven line-item duration
+- Production-rate-driven duration
 - Crew cost using 8 regular + 2 overtime hours per assigned role
 - Day/week/month equipment rental comparison plus fuel
 - Material + bedding + labor + equipment rollup
 - Overhead, profit, and tax/no-tax totals
-- Snapshot rates on bid line items
-- Depth-band selection for catalog rows flagged as depth-priced
-- Pipe bedding quantity calculation in CY from pipe OD, bedding depth, haunch/envelope geometry, and trench width
-- 440 imported MS/TN bedding-rule rows
-- Bedding rule browser with confidence and prohibition flags
-- Visible VERIFY BEFORE BID warnings for source rows marked assumed
-
-## Important bedding-data behavior
-
-The app preserves the source workbook's own confidence labels. In particular, many Mississippi rows are marked as assumed because the source workbook says the exact MDOT Table 603-I values still need verification. The program will calculate those rows, but it displays a warning on the estimate. Prohibited rows are blocked rather than treated as valid zero-cost selections.
-
-Bedding cost is calculated as:
-
-`bedding quantity (CY) x bedding material unit cost ($/CY)`
-
-The regulatory geometry determines quantity. You still enter the current supplier price per CY for the bedding material when adding the pipe line item.
+- Snapshot pricing on estimate line items
+- Depth-band production and depth pricing
+- 440 Mississippi/Tennessee bedding-rule rows
+- Bedding quantity calculation in CY
+- Confidence/prohibition handling and `VERIFY BEFORE BID` warnings
+- Pipe material, size, fitting, joint, application, and jurisdiction reference data
 
 ## Start on Windows
 
-1. Extract the ZIP.
-2. Open the `new_estimator_v3` folder.
+1. Extract the ZIP into a new folder.
+2. Open that folder.
 3. Double-click **Start Estimator.bat**.
+4. Your browser should open automatically at `http://127.0.0.1:5052`.
 
-On the first run it creates a local Python virtual environment and installs the required packages. It then opens:
+The first launch creates `.venv` and installs the packages in `requirements.txt`.
 
-`http://127.0.0.1:5051`
+## Suggested first test
 
-If Windows does not open the browser automatically, type that address into Chrome or Edge.
+1. Create a project.
+2. Add an **Erosion** section.
+3. Add `14Ga Wire Back Silt Fence` with quantity `120 LF`.
+4. V4 should automatically add `20 EA T-Posts` as an indented AUTO line.
+5. Remove the fence line; its T-Post line should disappear with it.
 
-## Suggested pipe workflow
-
-1. Create/edit a project and enter `TN` or `MS` for State.
-2. Choose the exact **Bedding jurisdiction** from the provided list.
-3. Add a **Sewer** or **Storm Drain** section.
-4. Add a catalog pipe item.
-5. For depth-priced rows, choose the depth band.
-6. For rows labeled `bedding calc`, choose the matching bedding rule and enter the current bedding material price per CY.
-7. Review any confidence warning before using the number in a bid.
+For Water, add one of the seeded C900 MJ bends/tees to see gasket and Mega Lug companions generated 1:1.
 
 ## Tests
 
@@ -62,8 +67,4 @@ If Windows does not open the browser automatically, type that address into Chrom
 .venv\Scripts\python.exe -m pytest -q
 ```
 
-The domain tests include a bedding geometry check against a known row from the supplied Mississippi workbook.
-
-## Optional data refresh
-
-The packaged database already contains the bedding data. If the source workbooks are later revised, `scripts/import_bedding_workbooks.py` can refresh the rules when given the updated workbook paths. `scripts/import_legacy_catalogs.py` can refresh reusable rate/reference catalogs from the older estimator database without importing its old bids.
+The test suite includes companion-ratio rounding, legacy costing, equipment tiering, bedding geometry, and depth pricing.

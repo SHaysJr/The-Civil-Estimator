@@ -165,6 +165,9 @@ CREATE TABLE IF NOT EXISTS line_items (
     pipe_type TEXT,
     nominal_diameter_in REAL,
     is_tax_exempt INTEGER NOT NULL DEFAULT 0,
+    auto_generated INTEGER NOT NULL DEFAULT 0,
+    parent_line_item_id INTEGER,
+    companion_ratio REAL,
     sort_order INTEGER NOT NULL DEFAULT 0
 );
 
@@ -220,6 +223,9 @@ def init_db():
         _ensure_column(conn, 'line_items', 'bedding_unit_cost_per_cy', 'REAL NOT NULL DEFAULT 0')
         _ensure_column(conn, 'line_items', 'bedding_confidence', 'TEXT')
         _ensure_column(conn, 'line_items', 'bedding_warning', 'TEXT')
+        _ensure_column(conn, 'line_items', 'auto_generated', 'INTEGER NOT NULL DEFAULT 0')
+        _ensure_column(conn, 'line_items', 'parent_line_item_id', 'INTEGER')
+        _ensure_column(conn, 'line_items', 'companion_ratio', 'REAL')
         _ensure_column(conn, 'bedding_rules', 'applies_all_sizes', 'INTEGER NOT NULL DEFAULT 0')
         conn.execute("INSERT OR IGNORE INTO app_settings(id, company_name) VALUES (1, 'Northwest Contracting Services')")
         conn.commit()

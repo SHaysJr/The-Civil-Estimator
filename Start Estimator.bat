@@ -6,6 +6,6 @@ if not exist ".venv\Scripts\python.exe" (
   echo Installing required packages...
   .venv\Scripts\python.exe -m pip install -r requirements.txt
 )
-start "" powershell -NoProfile -Command "Start-Sleep -Seconds 2; Start-Process 'http://127.0.0.1:5051'"
+start "" powershell -NoProfile -Command "Start-Sleep -Seconds 2; Start-Process 'http://127.0.0.1:5052'"
 .venv\Scripts\python.exe app.py
 pause
