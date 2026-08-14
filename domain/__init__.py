@@ -5,3 +5,4 @@ from .section import compute_section
 from .bedding import BeddingResult, bedding_volume_per_lf_cf, compute_bedding
 from .depth_pricing import DEPTH_BANDS, production_for_depth, depth_adjusted_unit_cost
 from .assemblies import companion_quantity
+from .assembly_sync import CompanionLine, CompanionSpec, build_companion_lines
