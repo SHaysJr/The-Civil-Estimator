@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block content %}
+<div class="pagehead"><div><a href="{{ url_for('section',section_id=line.section_id) }}">← {{ data.section.scope_name }}</a><h1>Edit line item</h1><p class="muted">Changing the primary quantity will automatically synchronize its companion materials.</p></div></div>
+<div class="card"><form method="post" class="lineform lineform-v4">
+<label class="wide-ish">Item<input value="{{ line.description }} ({{ line.unit }})" disabled></label>
+<label>Quantity<input name="quantity" type="number" step="0.01" min="0" required value="{{ line.quantity }}"></label>
+<label>Unit cost<input name="unit_cost_override" type="number" step="0.01" min="0" value="{{ line.unit_cost }}"></label>
+<label>Production/day<input name="production_rate_override" type="number" step="0.01" min="0" value="{{ line.production_rate or '' }}"></label>
+<label>Depth band<select name="depth_band"><option value="">Not applicable</option>{% for band in depth_bands %}<option value="{{ band }}" {% if line.depth_band == band %}selected{% endif %}>{{ band }} ft</option>{% endfor %}</select></label>
+{% if bedding_rules %}<label class="wide-ish">Bedding rule<select name="bedding_rule_id"><option value="">No bedding calculation</option>{% for r in bedding_rules %}<option value="{{ r.id }}" {% if line.bedding_rule_id == r.id %}selected{% endif %}>{{ r.jurisdiction }} · {{ r.pipe_material }} · {{ r.nominal_diameter_in|num }} in · {{ r.bedding_class }}{% if r.prohibited %} · PROHIBITED{% endif %}</option>{% endfor %}</select></label><label>Bedding material $/CY<input name="bedding_unit_cost_per_cy" type="number" step="0.01" min="0" value="{{ line.bedding_unit_cost_per_cy or '' }}"></label>{% endif %}
+<button>Save & synchronize</button><a class="button secondary" href="{{ url_for('section',section_id=line.section_id) }}">Cancel</a>
+</form></div>
+<div class="card note-card"><h2>Assembly behavior</h2><p>AUTO companion quantities are rebuilt from the primary quantity when you save. Existing companion price snapshots are preserved when possible. Manual estimate rows are not changed.</p></div>
+{% endblock %}
