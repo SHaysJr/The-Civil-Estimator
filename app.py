@@ -8,6 +8,7 @@ from services import (
     equipment_catalog, get_project, get_section, labor_catalog, list_projects,
     project_sections, update_project,
 )
+from services_assembly import get_primary_line, update_line_item
 
 app=Flask(__name__)
 app.config['SECRET_KEY']='local-estimator-v4-development-key'
@@ -21,7 +22,6 @@ def f(name, default=0):
 
 
 def pct(name, default):
-    # UI accepts percentages like 10; DB/domain stores 0.10.
     return f(name, default*100)/100
 
 
@@ -120,6 +120,32 @@ def section_add_line(section_id):
     except Exception as e: flash(str(e),'error')
     return redirect(url_for('section',section_id=section_id))
 
+@app.route('/lines/<int:line_item_id>/edit',methods=['GET','POST'])
+def edit_line(line_item_id):
+    try:
+        line=get_primary_line(line_item_id)
+    except ValueError as e:
+        return str(e),404
+    data=compute_section_from_db(line['section_id'])
+    scope=data['section']['scope_name']
+    system_type='Storm' if scope=='Storm Drain' else ('Sanitary' if scope=='Sewer' else None)
+    rules=[]
+    if system_type:
+        rules=bedding_rules_for(state=data['project']['state'] or None,
+                                jurisdiction=data['project']['bedding_jurisdiction'] or None,
+                                system_type=system_type)
+    if request.method=='POST':
+        try:
+            result=update_line_item(line_item_id,f('quantity'),request.form.get('unit_cost_override',''),
+                                    request.form.get('production_rate_override',''),request.form.get('depth_band',''),
+                                    request.form.get('bedding_rule_id',''),request.form.get('bedding_unit_cost_per_cy',''))
+            flash(f"Line item updated; {result['companions_synced']} automatic companion item(s) synchronized.",'success')
+            return redirect(url_for('section',section_id=result['section_id']))
+        except Exception as e:
+            flash(str(e),'error')
+            line=get_primary_line(line_item_id)
+    return render_template('line_edit.html',line=line,data=data,bedding_rules=rules,depth_bands=__import__('domain').DEPTH_BANDS)
+
 @app.post('/delete/<table>/<int:record_id>')
 def delete_route(table,record_id):
     section_id=request.form.get('section_id',type=int); project_id=request.form.get('project_id',type=int)
@@ -128,26 +154,20 @@ def delete_route(table,record_id):
     if section_id: return redirect(url_for('section',section_id=section_id))
     return redirect(url_for('project',project_id=project_id))
 
-
 @app.route('/bedding')
 def bedding_catalog():
     state=request.args.get('state','').strip().upper()
     jurisdiction=request.args.get('jurisdiction','').strip()
     with connect() as conn:
-        sql='SELECT * FROM bedding_rules WHERE 1=1'
-        args=[]
-        if state:
-            sql+=' AND state=?'; args.append(state)
-        if jurisdiction:
-            sql+=' AND jurisdiction=?'; args.append(jurisdiction)
+        sql='SELECT * FROM bedding_rules WHERE 1=1'; args=[]
+        if state: sql+=' AND state=?'; args.append(state)
+        if jurisdiction: sql+=' AND jurisdiction=?'; args.append(jurisdiction)
         sql+=' ORDER BY state,jurisdiction,system_type,pipe_material,nominal_diameter_in,bedding_class LIMIT 1000'
         rows=conn.execute(sql,args).fetchall()
     return render_template('bedding.html',rows=rows,jurisdictions=bedding_jurisdictions(state or None),state=state,jurisdiction=jurisdiction)
 
-
 @app.route('/companions')
-def companions_catalog():
-    return render_template('companions.html', rows=companion_rules())
+def companions_catalog(): return render_template('companions.html', rows=companion_rules())
 
 @app.route('/rates')
 def rates():
