@@ -3,10 +3,11 @@ from flask import Flask, flash, redirect, render_template, request, url_for
 
 from db import init_db, connect
 from services import (
-    add_crew, add_equipment, add_line_from_catalog, add_section, bedding_jurisdictions, bedding_rules_for, catalog_materials, catalog_materials_with_companions, companion_rules,
-    compute_project, compute_section_from_db, create_project, delete_record,
+    add_aggregate_material, add_crew, add_equipment, add_line_from_catalog, add_section, aggregate_materials,
+    bedding_jurisdictions, bedding_rules_for, catalog_materials, catalog_materials_with_companions, companion_rules,
+    compute_aggregate_calculator, compute_project, compute_section_from_db, create_project, delete_record,
     equipment_catalog, get_project, get_section, labor_catalog, list_projects,
-    project_sections, update_project,
+    project_sections, update_aggregate_material, update_project,
 )
 
 app=Flask(__name__)
@@ -148,6 +149,57 @@ def bedding_catalog():
 @app.route('/companions')
 def companions_catalog():
     return render_template('companions.html', rows=companion_rules())
+
+
+@app.route('/aggregate-calculator', methods=['GET', 'POST'])
+def aggregate_calculator():
+    result = None
+    form = {'area_sqft': '', 'depth_in': '10', 'material_id': '', 'tons_per_cy_override': ''}
+    if request.method == 'POST':
+        form['area_sqft'] = request.form.get('area_sqft', '')
+        form['depth_in'] = request.form.get('depth_in', '10')
+        form['material_id'] = request.form.get('material_id', '')
+        form['tons_per_cy_override'] = request.form.get('tons_per_cy_override', '')
+        try:
+            result = compute_aggregate_calculator(
+                area_sqft=f('area_sqft'),
+                depth_in=f('depth_in', 10),
+                material_id=int(form['material_id']) if form['material_id'] else None,
+                tons_per_cy_override=form['tons_per_cy_override'] or None,
+            )
+        except ValueError as e:
+            flash(str(e), 'error')
+    return render_template('aggregate_calculator.html', materials=aggregate_materials(), result=result, form=form)
+
+
+@app.post('/aggregate-calculator/materials')
+def aggregate_calculator_add_material():
+    try:
+        add_aggregate_material(request.form)
+        flash('Material added.', 'success')
+    except ValueError as e:
+        flash(str(e), 'error')
+    return redirect(url_for('aggregate_calculator'))
+
+
+@app.post('/aggregate-calculator/materials/<int:material_id>')
+def aggregate_calculator_update_material(material_id):
+    try:
+        update_aggregate_material(material_id, request.form)
+        flash('Material updated.', 'success')
+    except ValueError as e:
+        flash(str(e), 'error')
+    return redirect(url_for('aggregate_calculator'))
+
+
+@app.post('/aggregate-calculator/materials/<int:material_id>/delete')
+def aggregate_calculator_delete_material(material_id):
+    try:
+        delete_record('dirt_aggregate_rates', material_id)
+        flash('Material removed.', 'success')
+    except ValueError as e:
+        flash(str(e), 'error')
+    return redirect(url_for('aggregate_calculator'))
 
 @app.route('/rates')
 def rates():

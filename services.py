@@ -6,6 +6,7 @@ from domain import (
     DEPTH_BANDS,
     Equipment,
     companion_quantity,
+    compute_aggregate_estimate,
     compute_bedding,
     compute_section,
     depth_adjusted_unit_cost,
@@ -298,8 +299,98 @@ def add_line_from_catalog(
         return {'line_item_id': parent_id, 'companions_added': len(companions)}
 
 
+def app_settings():
+    with connect() as conn:
+        return conn.execute('SELECT * FROM app_settings WHERE id=1').fetchone()
+
+
+def aggregate_materials():
+    with connect() as conn:
+        return conn.execute('SELECT * FROM dirt_aggregate_rates ORDER BY name').fetchall()
+
+
+def get_aggregate_material(material_id):
+    with connect() as conn:
+        return conn.execute('SELECT * FROM dirt_aggregate_rates WHERE id=?', (material_id,)).fetchone()
+
+
+def aggregate_material_form(data):
+    name = (data.get('name') or '').strip()
+    if not name:
+        raise ValueError('Material name is required.')
+    try:
+        tons_per_cy = float(data.get('tons_per_cy'))
+    except (TypeError, ValueError):
+        raise ValueError('Conversion rate (tons per cubic yard) must be a number.')
+    if tons_per_cy <= 0:
+        raise ValueError('Conversion rate (tons per cubic yard) must be greater than zero.')
+    return {
+        'name': name,
+        'per_ton_cost': float(data.get('per_ton_cost') or 0),
+        'per_ton_delivery_cost': float(data.get('per_ton_delivery_cost') or 0),
+        'fuel_surcharge_applies': 1 if data.get('fuel_surcharge_applies') else 0,
+        'tons_per_cy': tons_per_cy,
+    }
+
+
+def add_aggregate_material(data):
+    row = aggregate_material_form(data)
+    with connect() as conn:
+        cur = conn.execute(
+            '''INSERT INTO dirt_aggregate_rates(name,per_ton_cost,per_ton_delivery_cost,fuel_surcharge_applies,tons_per_cy)
+               VALUES (?,?,?,?,?)''',
+            (row['name'], row['per_ton_cost'], row['per_ton_delivery_cost'], row['fuel_surcharge_applies'], row['tons_per_cy']),
+        )
+        conn.commit()
+        return cur.lastrowid
+
+
+def update_aggregate_material(material_id, data):
+    row = aggregate_material_form(data)
+    with connect() as conn:
+        conn.execute(
+            '''UPDATE dirt_aggregate_rates SET name=?,per_ton_cost=?,per_ton_delivery_cost=?,fuel_surcharge_applies=?,tons_per_cy=?
+               WHERE id=?''',
+            (row['name'], row['per_ton_cost'], row['per_ton_delivery_cost'], row['fuel_surcharge_applies'], row['tons_per_cy'], material_id),
+        )
+        conn.commit()
+
+
+def compute_aggregate_calculator(*, area_sqft, depth_in, material_id=None, tons_per_cy_override=None):
+    """Square footage -> cubic yards -> tons/cost, using a material's conversion (companion) rate.
+
+    Pass ``material_id`` to price against a saved material's rates, ``tons_per_cy_override``
+    to swap in a different conversion rate for that same material's pricing (e.g. a supplier
+    quotes a different yield), or both to price a one-off rate without touching the catalog.
+    """
+    material = get_aggregate_material(material_id) if material_id not in (None, '') else None
+    if material_id not in (None, '') and not material:
+        raise ValueError('Material not found.')
+
+    if tons_per_cy_override not in (None, ''):
+        tons_per_cy = float(tons_per_cy_override)
+    elif material:
+        tons_per_cy = material['tons_per_cy']
+    else:
+        raise ValueError('Choose a material or enter a conversion rate.')
+
+    settings = app_settings()
+    fuel_surcharge_per_ton = settings['fuel_surcharge_per_ton'] if settings else 0
+
+    estimate = compute_aggregate_estimate(
+        area_sqft=area_sqft,
+        depth_in=depth_in,
+        tons_per_cy=tons_per_cy,
+        per_ton_cost=material['per_ton_cost'] if material else 0,
+        per_ton_delivery_cost=material['per_ton_delivery_cost'] if material else 0,
+        fuel_surcharge_per_ton=fuel_surcharge_per_ton,
+        fuel_surcharge_applies=bool(material['fuel_surcharge_applies']) if material else False,
+    )
+    return {'material': material, 'estimate': estimate}
+
+
 def delete_record(table, record_id):
-    allowed = {'sections', 'section_crew', 'section_equipment', 'line_items'}
+    allowed = {'sections', 'section_crew', 'section_equipment', 'line_items', 'dirt_aggregate_rates'}
     if table not in allowed:
         raise ValueError('Invalid delete target.')
     with connect() as conn:

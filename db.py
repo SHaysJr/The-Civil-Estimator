@@ -228,4 +228,16 @@ def init_db():
         _ensure_column(conn, 'line_items', 'companion_ratio', 'REAL')
         _ensure_column(conn, 'bedding_rules', 'applies_all_sizes', 'INTEGER NOT NULL DEFAULT 0')
         conn.execute("INSERT OR IGNORE INTO app_settings(id, company_name) VALUES (1, 'Northwest Contracting Services')")
+        if conn.execute('SELECT COUNT(*) FROM dirt_aggregate_rates').fetchone()[0] == 0:
+            conn.executemany(
+                '''INSERT INTO dirt_aggregate_rates(name,per_ton_cost,per_ton_delivery_cost,fuel_surcharge_applies,tons_per_cy)
+                   VALUES (?,?,?,?,?)''',
+                [
+                    ('Fill sand', 11.52, 15.0, 0, 1.35),
+                    ('CR610', 29.5, 15.0, 1, 1.4),
+                    ('Rip Rap', 40.0, 15.0, 1, 1.35),
+                    ('4x1', 31.25, 15.0, 1, 1.4),
+                    ('#57 Stone', 37.0, 15.0, 1, 1.4),
+                ],
+            )
         conn.commit()

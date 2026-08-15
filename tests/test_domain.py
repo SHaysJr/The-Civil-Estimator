@@ -81,3 +81,55 @@ def test_companion_quantity_fractional_primary_units_rounds_each_up():
 
 def test_companion_quantity_one_to_one_fitting_hardware():
     assert companion_quantity(3, 1, 'EA') == Decimal('3')
+
+
+from domain.aggregate import area_depth_to_cubic_yards, compute_aggregate_estimate
+
+
+def test_area_depth_to_cubic_yards_10_inch_fill():
+    # 1000 sqft at 10 in = 833.33 cf / 27 = 30.86 CY.
+    assert area_depth_to_cubic_yards(area_sqft=1000, depth_in=10) == Decimal('30.86419753086419753086419753')
+
+
+def test_area_depth_to_cubic_yards_rejects_zero_depth():
+    try:
+        area_depth_to_cubic_yards(area_sqft=1000, depth_in=0)
+        assert False, 'expected ValueError'
+    except ValueError:
+        pass
+
+
+def test_compute_aggregate_estimate_uses_materials_own_conversion_rate():
+    # CR-610 at 1.4 tons/CY, with a fuel surcharge applied.
+    r = compute_aggregate_estimate(
+        area_sqft=1000, depth_in=10, tons_per_cy=1.4,
+        per_ton_cost=29.5, per_ton_delivery_cost=15.0,
+        fuel_surcharge_per_ton=5, fuel_surcharge_applies=True,
+    )
+    assert r.cubic_yards == Decimal('30.86')
+    assert r.tons == Decimal('43.21')
+    assert r.material_cost == Decimal('1274.69')
+    assert r.delivery_cost == Decimal('648.15')
+    assert r.fuel_surcharge_cost == Decimal('216.05')
+    assert r.total_cost == Decimal('2138.89')
+
+
+def test_compute_aggregate_estimate_different_material_different_rate_no_surcharge():
+    # Riprap at 1.35 tons/CY, no fuel surcharge - a different companion rate than CR-610.
+    r = compute_aggregate_estimate(
+        area_sqft=500, depth_in=10, tons_per_cy=1.35,
+        per_ton_cost=40.0, per_ton_delivery_cost=15.0,
+        fuel_surcharge_per_ton=5, fuel_surcharge_applies=False,
+    )
+    assert r.cubic_yards == Decimal('15.43')
+    assert r.tons == Decimal('20.83')
+    assert r.fuel_surcharge_cost == Decimal('0.00')
+    assert r.total_cost == Decimal('1145.83')
+
+
+def test_compute_aggregate_estimate_rejects_zero_conversion_rate():
+    try:
+        compute_aggregate_estimate(area_sqft=1000, depth_in=10, tons_per_cy=0)
+        assert False, 'expected ValueError'
+    except ValueError:
+        pass
