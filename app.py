@@ -1,4 +1,7 @@
+import sys
 from decimal import Decimal, InvalidOperation
+from pathlib import Path
+
 from flask import Flask, flash, redirect, render_template, request, url_for
 
 from db import init_db, connect
@@ -10,7 +13,12 @@ from services import (
     project_sections, update_aggregate_material, update_project,
 )
 
-app=Flask(__name__)
+# Under PyInstaller, templates/static are unpacked to a temp dir (sys._MEIPASS)
+# rather than living next to this file, so point Flask at them explicitly.
+FROZEN = bool(getattr(sys, 'frozen', False))
+_BUNDLE_DIR = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
+
+app=Flask(__name__, template_folder=str(_BUNDLE_DIR/'templates'), static_folder=str(_BUNDLE_DIR/'static'))
 app.config['SECRET_KEY']='local-estimator-v4-development-key'
 
 
@@ -209,4 +217,11 @@ def rates():
     return render_template('rates.html',counts=counts,scopes=scopes,labor=labor_catalog(),equipment=equipment_catalog(),materials=catalog_materials())
 
 if __name__=='__main__':
-    init_db(); app.run(host='127.0.0.1',port=5052,debug=True)
+    init_db()
+    if FROZEN:
+        import threading
+        import webbrowser
+        threading.Timer(1.5, lambda: webbrowser.open('http://127.0.0.1:5052')).start()
+        app.run(host='127.0.0.1',port=5052,debug=False,use_reloader=False)
+    else:
+        app.run(host='127.0.0.1',port=5052,debug=True)

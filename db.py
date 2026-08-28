@@ -1,7 +1,14 @@
+import sys
 import sqlite3
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+# Under PyInstaller (frozen), __file__ lives in a temp extraction dir that is
+# wiped after the process exits, so the database has to live next to the
+# actual .exe instead or every run would start from an empty database.
+if getattr(sys, 'frozen', False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / 'estimator.db'
 
 
@@ -213,7 +220,23 @@ def _ensure_column(conn, table, column, ddl):
         conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {ddl}")
 
 
+def _seed_bundled_db_if_missing():
+    """On first run of a packaged .exe, copy the seeded catalog next to the exe.
+
+    PyInstaller unpacks bundled data (including estimator.db) into a
+    read-only temp dir at sys._MEIPASS, so labor/equipment/material/bedding
+    catalogs would otherwise be missing on a fresh install.
+    """
+    if DB_PATH.exists() or not getattr(sys, 'frozen', False):
+        return
+    bundled = Path(getattr(sys, '_MEIPASS', '')) / 'estimator.db'
+    if bundled.exists():
+        import shutil
+        shutil.copy(bundled, DB_PATH)
+
+
 def init_db():
+    _seed_bundled_db_if_missing()
     with connect() as conn:
         conn.executescript(SCHEMA)
         # Lightweight migrations keep an existing V2 database usable.
