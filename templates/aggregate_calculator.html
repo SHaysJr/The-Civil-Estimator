@@ -1,0 +1,38 @@
+{% extends 'base.html' %}{% block content %}
+<div class="pagehead"><div><h1>Square Footage → Cubic Yards Calculator</h1><p>Enter an area and fill depth to get cubic yards, then price it in tons against a material's conversion rate. Each material keeps its own rate (CR-610, riprap, #4x1, #57 stone, sand, or anything you add) so density differences are accounted for automatically — override it per calculation when a supplier quotes something different.</p></div><a class="button secondary" href="{{ url_for('rates') }}">Rate Catalog</a></div>
+
+<div class="card"><h2>Calculate</h2>
+<form method="post" action="{{ url_for('aggregate_calculator') }}" class="lineform lineform-v4">
+<label>Area (sq ft)<input name="area_sqft" type="number" step="0.01" min="0" value="{{ form.area_sqft }}" required></label>
+<label>Depth (inches)<input name="depth_in" type="number" step="0.01" min="0.01" value="{{ form.depth_in }}" required></label>
+<label class="wide-ish">Material<select name="material_id"><option value="">— choose a material —</option>{% for m in materials %}<option value="{{ m.id }}" {% if form.material_id==m.id|string %}selected{% endif %}>{{ m.name }} — {{ m.tons_per_cy|num }} tons/CY @ {{ m.per_ton_cost|money }}/ton{% if m.fuel_surcharge_applies %} +fuel{% endif %}</option>{% endfor %}</select></label>
+<label>Conversion rate override (tons/CY)<input name="tons_per_cy_override" type="number" step="0.0001" min="0" value="{{ form.tons_per_cy_override }}" placeholder="use material's rate"></label>
+<button>Calculate</button></form>
+</div>
+
+{% if result %}<div class="card">
+<div class="kpis"><div><span>Cubic yards</span><strong>{{ result.estimate.cubic_yards|num }} CY</strong></div><div><span>Tons needed</span><strong>{{ result.estimate.tons|num }} tons</strong></div><div><span>Rate used</span><strong>{{ result.estimate.tons_per_cy|num }} tons/CY</strong></div><div><span>Estimated cost</span><strong>{{ result.estimate.total_cost|money }}</strong></div></div>
+{% if result.material %}<table><tr><th>Material</th><th>Material cost</th><th>Delivery</th><th>Fuel surcharge</th><th>Total</th></tr><tr><td>{{ result.material.name }}</td><td>{{ result.estimate.material_cost|money }}</td><td>{{ result.estimate.delivery_cost|money }}</td><td>{{ result.estimate.fuel_surcharge_cost|money }}</td><td><strong>{{ result.estimate.total_cost|money }}</strong></td></tr></table>{% else %}<p class="muted">No material selected — quantity only, no cost priced.</p>{% endif %}
+</div>{% endif %}
+
+<div class="card"><div class="sectionhead"><div><h2>Materials &amp; conversion rates</h2><p class="muted">Tons per cubic yard is the material's companion/yield rate — edit it for the rock or sand you're actually running, or add a new material entirely.</p></div></div>
+<table><thead><tr><th>Name</th><th>$/ton</th><th>Delivery $/ton</th><th>Fuel surcharge</th><th>Tons/CY</th><th></th></tr></thead><tbody>
+{% for m in materials %}<tr>
+<td><input form="matform{{ m.id }}" name="name" value="{{ m.name }}"></td>
+<td><input form="matform{{ m.id }}" name="per_ton_cost" type="number" step="0.01" min="0" value="{{ m.per_ton_cost }}"></td>
+<td><input form="matform{{ m.id }}" name="per_ton_delivery_cost" type="number" step="0.01" min="0" value="{{ m.per_ton_delivery_cost }}"></td>
+<td><input form="matform{{ m.id }}" name="fuel_surcharge_applies" type="checkbox" {% if m.fuel_surcharge_applies %}checked{% endif %}></td>
+<td><input form="matform{{ m.id }}" name="tons_per_cy" type="number" step="0.0001" min="0.0001" value="{{ m.tons_per_cy }}"></td>
+<td><button form="matform{{ m.id }}" class="link">save</button><form method="post" action="{{ url_for('aggregate_calculator_delete_material',material_id=m.id) }}"><button class="link danger">remove</button></form></td>
+</tr>{% else %}<tr><td colspan="6" class="empty">No materials yet — add one below.</td></tr>{% endfor %}
+</tbody></table>
+{% for m in materials %}<form id="matform{{ m.id }}" method="post" action="{{ url_for('aggregate_calculator_update_material',material_id=m.id) }}"></form>{% endfor %}
+<form method="post" action="{{ url_for('aggregate_calculator_add_material') }}" class="lineform lineform-v4">
+<label>Name<input name="name" placeholder="e.g. #4 Riprap" required></label>
+<label>$/ton<input name="per_ton_cost" type="number" step="0.01" min="0" value="0"></label>
+<label>Delivery $/ton<input name="per_ton_delivery_cost" type="number" step="0.01" min="0" value="0"></label>
+<label>Fuel surcharge applies<input name="fuel_surcharge_applies" type="checkbox"></label>
+<label>Tons/CY (conversion rate)<input name="tons_per_cy" type="number" step="0.0001" min="0.0001" required></label>
+<button>Add material</button></form>
+</div>
+{% endblock %}

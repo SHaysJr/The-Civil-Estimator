@@ -1,7 +1,14 @@
+import sys
 import sqlite3
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+# Under PyInstaller (frozen), __file__ lives in a temp extraction dir that is
+# wiped after the process exits, so the database has to live next to the
+# actual .exe instead or every run would start from an empty database.
+if getattr(sys, 'frozen', False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / 'estimator.db'
 
 
@@ -213,7 +220,23 @@ def _ensure_column(conn, table, column, ddl):
         conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {ddl}")
 
 
+def _seed_bundled_db_if_missing():
+    """On first run of a packaged .exe, copy the seeded catalog next to the exe.
+
+    PyInstaller unpacks bundled data (including estimator.db) into a
+    read-only temp dir at sys._MEIPASS, so labor/equipment/material/bedding
+    catalogs would otherwise be missing on a fresh install.
+    """
+    if DB_PATH.exists() or not getattr(sys, 'frozen', False):
+        return
+    bundled = Path(getattr(sys, '_MEIPASS', '')) / 'estimator.db'
+    if bundled.exists():
+        import shutil
+        shutil.copy(bundled, DB_PATH)
+
+
 def init_db():
+    _seed_bundled_db_if_missing()
     with connect() as conn:
         conn.executescript(SCHEMA)
         # Lightweight migrations keep an existing V2 database usable.
@@ -228,4 +251,16 @@ def init_db():
         _ensure_column(conn, 'line_items', 'companion_ratio', 'REAL')
         _ensure_column(conn, 'bedding_rules', 'applies_all_sizes', 'INTEGER NOT NULL DEFAULT 0')
         conn.execute("INSERT OR IGNORE INTO app_settings(id, company_name) VALUES (1, 'Northwest Contracting Services')")
+        if conn.execute('SELECT COUNT(*) FROM dirt_aggregate_rates').fetchone()[0] == 0:
+            conn.executemany(
+                '''INSERT INTO dirt_aggregate_rates(name,per_ton_cost,per_ton_delivery_cost,fuel_surcharge_applies,tons_per_cy)
+                   VALUES (?,?,?,?,?)''',
+                [
+                    ('Fill sand', 11.52, 15.0, 0, 1.35),
+                    ('CR610', 29.5, 15.0, 1, 1.4),
+                    ('Rip Rap', 40.0, 15.0, 1, 1.35),
+                    ('4x1', 31.25, 15.0, 1, 1.4),
+                    ('#57 Stone', 37.0, 15.0, 1, 1.4),
+                ],
+            )
         conn.commit()

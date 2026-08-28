@@ -61,6 +61,14 @@ The first launch creates `.venv` and installs the packages in `requirements.txt`
 
 For Water, add one of the seeded C900 MJ bends/tees to see gasket and Mega Lug companions generated 1:1.
 
+## Build a standalone .exe (no Python required to run it)
+
+1. Double-click **build_exe.bat**. First run installs `pyinstaller` into `.venv` and can take a few minutes.
+2. When it finishes, your executable is at `dist\CivilEstimator.exe`.
+3. Copy that single file into its own folder (it creates `estimator.db` next to itself on first launch, seeded from this repo's catalog) and double-click it. Your browser opens automatically at `http://127.0.0.1:5052`.
+
+Re-run `build_exe.bat` any time after pulling changes to rebuild the .exe.
+
 ## Tests
 
 ```powershell
